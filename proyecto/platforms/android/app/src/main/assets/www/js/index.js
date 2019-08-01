@@ -45,9 +45,5 @@ var app = {
     
 };
 
-vibrar.click(function(){
-      
-    navigator.notification.vibrate(500);
-});
 app.initialize();
 
