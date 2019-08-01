@@ -27,6 +27,10 @@
                         {
                             "xml": "<feature name=\"Contacts\"><param name=\"android-package\" value=\"org.apache.cordova.contacts.ContactManager\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"InAppBrowser\"><param name=\"android-package\" value=\"org.apache.cordova.inappbrowser.InAppBrowser\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -89,6 +93,9 @@
             "PACKAGE_NAME": "com.example.hello"
         },
         "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "com.example.hello"
+        },
+        "cordova-plugin-inappbrowser": {
             "PACKAGE_NAME": "com.example.hello"
         }
     },
@@ -227,6 +234,15 @@
             "merges": [
                 ""
             ]
+        },
+        {
+            "id": "cordova-plugin-inappbrowser.inappbrowser",
+            "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
+            "pluginId": "cordova-plugin-inappbrowser",
+            "clobbers": [
+                "cordova.InAppBrowser.open",
+                "window.open"
+            ]
         }
     ],
     "plugin_metadata": {
@@ -235,6 +251,7 @@
         "cordova-plugin-network-information": "2.0.2",
         "cordova-plugin-camera": "4.1.0",
         "cordova-plugin-contacts": "3.0.1",
-        "cordova-plugin-vibration": "3.1.1"
+        "cordova-plugin-vibration": "3.1.1",
+        "cordova-plugin-inappbrowser": "3.1.0"
     }
 }
