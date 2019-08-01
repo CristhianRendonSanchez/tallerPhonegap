@@ -54,11 +54,13 @@
 			<br>
 			<center>
 
-                <button class="btn btn-success" id="btnContactos" type="button" onclick="window.location.href='contactos.html'">Ver Contactos</button>
-                <button class="btn btn-danger" id="btnConnect" type="button" onclick="javascript:verificarConexion();">Tipo de Conexión</button>
+                <button class="btn btn-success" id="btnContactos" type="button" onclick="window.location.href='contactos.html'">Contactos?</button>
+                <button class="btn btn-danger" id="btnConnect" type="button" onclick="javascript:verificarConexion();">Conectado?</button>
                 <button class="btn btn-warning" id="btnCamera" type="button" title="Ir a Camera" onclick="window.location.href='home.html'">Camara</button>
-                <button class="btn btn-info" id="btnVibrar" type="button" title="Vibrar" onclick="window.location.href='home.html'">Vibrar</button>
-                <button class="btn btn-secondary" id="btnLista" type="button" title="Ir a lista" onclick="window.location.href='lista.html'">Camara</button>
+                <button class="btn btn-info" id="btnVibrar" type="button" title="Vibrar" onclick="vibrate();">Vibrar</button>
+                <button class="btn btn-secondary" id="btnNavegar" type="button" title="Ir a Navegador" onclick="window.location.href='lista.html'">Navegar</button>
+                <button class="btn btn-dark" id="btnLista" type="button" title="Ir a lista" onclick="window.location.href='lista.html'">Lista</button>
+
         </center>
         </div>
     </div>
@@ -82,7 +84,13 @@
 
                 alert('Tipo de Conexión: ' + states[networkState]);
             }
-	</script>
+    </script>
+     <script type="text/javascript" charset="utf-8">
+         function vibrate() {
+        navigator.notification.vibrate(2000);
+        alert("hola");
+    }
+     </script>
 
 	<script type="text/javascript">
         app.initialize();
@@ -90,3 +98,4 @@
 </body>
 
 </html>
+

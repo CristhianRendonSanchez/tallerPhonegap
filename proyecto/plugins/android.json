@@ -22,6 +22,9 @@
     },
     "cordova-plugin-contacts": {
       "PACKAGE_NAME": "com.example.hello"
+    },
+    "cordova-plugin-vibration": {
+      "PACKAGE_NAME": "com.example.hello"
     }
   },
   "dependent_plugins": {}

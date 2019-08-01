@@ -41,6 +41,13 @@ var app = {
 
         console.log('Received Event: ' + id);
     }
+
+    
 };
 
+vibrar.click(function(){
+      
+    navigator.notification.vibrate(500);
+});
 app.initialize();
+

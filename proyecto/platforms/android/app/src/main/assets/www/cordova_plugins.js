@@ -140,6 +140,7 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     "cordova-plugin-device": "2.0.3",
     "cordova-plugin-network-information": "2.0.2",
     "cordova-plugin-camera": "4.1.0",
-    "cordova-plugin-contacts": "3.0.1"
+    "cordova-plugin-contacts": "3.0.1",
+    "cordova-plugin-vibration": "3.1.1"
   };
 });
